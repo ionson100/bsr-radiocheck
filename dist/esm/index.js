@@ -100,7 +100,7 @@ var RadioCheck = /** @class */ (function (_super) {
                 }
             } },
             this.renderLabelLeft(),
-            React.createElement("input", { id: this.props.id, onChange: this.innerChange, ref: this.mRefCheckBox, className: this.props.className, "data-bsr-check": this.props.dataUser, name: this.props.name, style: this.props.style, type: !this.props.type ? "checkbox" : this.props.type }),
+            React.createElement("input", { id: this.props.id, onChange: this.innerChange, ref: this.mRefCheckBox, className: this.props.className, "data-bsr-check": this.props.dataUser, value: this.props.value, name: this.props.name, style: this.props.style, type: !this.props.type ? "checkbox" : this.props.type }),
             this.renderLabelRight()));
     };
     RadioCheck.prototype.innerChange = function (event) {

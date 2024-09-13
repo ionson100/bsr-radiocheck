@@ -13,6 +13,7 @@ type PropsRadioCheck = {
     dataUser?: string | undefined;
     position?: 'left' | 'right';
     name?: string;
+    value?: string;
 };
 declare class RadioCheck extends Component<PropsRadioCheck, any> {
     private readonly mRefCheckBox;

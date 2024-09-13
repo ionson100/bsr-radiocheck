@@ -12,6 +12,7 @@ export type PropsRadioCheck = {
     dataUser?: string | undefined;
     position?: 'left' | 'right';
     name?: string;
+    value?: string;
 };
 export default class RadioCheck extends Component<PropsRadioCheck, any> {
     private readonly mRefCheckBox;

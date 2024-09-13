@@ -13,6 +13,7 @@ export type PropsRadioCheck = {
     dataUser?: string | undefined
     position?: 'left' | 'right'
     name?: string
+    value?:string
 }
 
 
@@ -96,7 +97,7 @@ export default class RadioCheck extends Component<PropsRadioCheck, any> {
                     ref={this.mRefCheckBox}
                     className={this.props.className}
                     data-bsr-check={this.props.dataUser}
-
+                    value={this.props.value}
                     name={this.props.name}
                     style={this.props.style}
                     type={!this.props.type ? "checkbox" : this.props.type}/>
