@@ -1,0 +1,14 @@
+.cb-bsr-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 3px;
+
+}
+.cb-bsr-label{
+    padding-left: 5px;
+    padding-right: 5px;
+}
