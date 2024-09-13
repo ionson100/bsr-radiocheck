@@ -1,4 +1,4 @@
-import React, {Component, CSSProperties, ReactElement, useEffect} from "react";
+import React, {Component, CSSProperties, ReactElement} from "react";
 
 export type PropsRadioCheck = {
     id?: string

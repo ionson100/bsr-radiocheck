@@ -13,7 +13,21 @@ npm install --save bsr-radiocheck
 ## Usage
 
 ```tsx
-
+import React from "react";
+import {RadioCheck} from "bsr-radiocheck";
+import 'bsr-radiocheck/dist/index.css'
+export function App(){
+    return<div>
+        <RadioCheck
+            id={"check-1"}
+            checked={true}
+            labelContent={'Simple CheckBox'}
+            onChange={(t,r)=>{
+                console.log("id: "+t.getAttribute('id')+" checked: "+r)
+            }}
+        />
+    </div>
+}
 ```
 
 ## License
