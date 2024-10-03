@@ -60,6 +60,9 @@ var RadioCheck = /** @class */ (function (_super) {
         if (this.props.checked) {
             this.mRefCheckBox.current.checked = true;
         }
+        if (this.props.defaultValue !== undefined && this.props.defaultValue !== null) {
+            this.mRefCheckBox.current.checked = this.props.defaultValue;
+        }
     };
     RadioCheck.prototype.renderLabelLeft = function () {
         var _a;

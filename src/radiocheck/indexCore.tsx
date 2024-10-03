@@ -8,12 +8,16 @@ export type PropsRadioCheck = {
     styleLabel?: CSSProperties
     labelContent?: string | ReactElement
     onChange?: (target: HTMLInputElement, checked: boolean) => void
+    /**
+     * @deprecated since version 1.1.3
+     */
     checked?: boolean
     type?: 'checkbox' | 'radio' | undefined;
     dataUser?: string | undefined
     position?: 'left' | 'right'
     name?: string
     value?:string
+    defaultValue?: boolean
 }
 
 
@@ -37,7 +41,9 @@ export default class RadioCheck extends Component<PropsRadioCheck, any> {
     componentDidMount() {
         if (this.props.checked) {
             this.mRefCheckBox.current!.checked = true
-
+        }
+        if(this.props.defaultValue!==undefined && this.props.defaultValue !== null) {
+            this.mRefCheckBox.current!.checked = this.props.defaultValue
         }
     }
 
@@ -62,6 +68,7 @@ export default class RadioCheck extends Component<PropsRadioCheck, any> {
     public GetInput() {
         return this.mRefCheckBox.current
     }
+
 
 
     render() {
