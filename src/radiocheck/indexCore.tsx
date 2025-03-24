@@ -22,7 +22,7 @@ export type PropsRadioCheck = {
 
 
 export default class RadioCheck extends Component<PropsRadioCheck, any> {
-    private readonly mRefCheckBox: React.RefObject<HTMLInputElement | null>
+    private readonly mRefCheckBox: React.RefObject<HTMLInputElement>
 
     constructor(props: Readonly<PropsRadioCheck>) {
         super(props);
